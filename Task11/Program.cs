@@ -7,26 +7,31 @@
 
 // Используем функции из лекции
 
-int number = new Random().Next(10, 100); //получим рандомные числа от 10 до 100
-Console.WriteLine($"Случайное число из диапозона от 10 до 99 --> {number}");
+int number = new Random().Next(100, 1000); //получим рандомные числа от 10 до 100
+Console.WriteLine($"Случайное число из диапозона от 100 до 999 --> {number}");
 
-// int firstDigit = number / 10; //делим на 10 получаем 7,8 т.к. int используется поэтому выводится только 7, а это первое число
-// int secondDigit = number % 10;
+// int firstDigit = number / 100;
+// int lastDigit = number % 10;
+
+// int result = firstDigit * 10 + lastDigit;
+// Console.WriteLine(result);
 
 // if (firstDigit > secondDigit) Console.WriteLine($"Наибольшая цифра числа {firstDigit}");
 // else Console.WriteLine($"Наибольшая цифра числа {secondDigit}");
 
-// int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit;
+// int Digit = firstDigit > secondDigit ? firstDigit : secondDigit;
 // Console.WriteLine($"Наибольшая цифра числа {maxDigit}");
-int maxDigit = MaxDigit(number);
-Console.WriteLine($"Наибольшая цифра числа {maxDigit}");
 
-int MaxDigit(int num) // num = number
+int digit = Digit(number);
+Console.WriteLine(digit);
+
+int Digit(int num) // num = number название метода
+//  и параметр, или исходные данные
 {
-    int firstDigit = num / 10; //делим на 10 получаем 7,8 т.к. int используется поэтому выводится только 7, а это первое число
-    int secondDigit = num % 10;
-    // if (firstDigit > secondDigit) return firstDigit;
-    // else return 0;
-    int result = firstDigit > secondDigit ? firstDigit : secondDigit;
-    return result;
+     int firstDigit = num / 100; //делим на 10 получаем 7,8 т.к. int используется поэтому выводится только 7, а это первое число
+     int lastDigit = num % 10; // остаток от деление это третье число
+     // if (firstDigit > secondDigit) return firstDigit;
+     // else return 0;
+     int result = firstDigit * 10 + lastDigit;
+     return result;
 }
