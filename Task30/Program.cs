@@ -3,6 +3,9 @@
 // заполненный нулями и единицами в случ порядке
 // [1,0,1,1,0,1,0]
 
+
+
+
 // int SumProiz(int num)
 // {
 //     int pro = 1;
@@ -20,13 +23,13 @@
 // Console.WriteLine($"Произведение чисел от 1 до {number} = {result}");
 
 
-int [] array = new int [8]; // 0 1 2 3 4 5 6 7 
-// int [] array = {43, 54, 52, 52,41,489, 14, 75}; // либо так можно записать
+// int [] array = new int [8]; // 0 1 2 3 4 5 6 7 
+// // int [] array = {43, 54, 52, 52,41,489, 14, 75}; // либо так можно записать
 
 
-for (int i = 0; i < array.Length; i++)
-{
-    array[i] = new Random().Next(2);
-    Console.WriteLine(array[i]+ " ");
+// for (int i = 0; i < array.Length; i++)
+// {
+//     array[i] = new Random().Next(2);
+//     Console.WriteLine(array[i]+ " ");
     
-}
+// }
