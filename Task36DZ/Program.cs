@@ -41,7 +41,7 @@ int[] createMassiv = CreateArrayRndInt(4, -6, 89);
 PrintArray(createMassiv);
 
 int findSum = FindSum(createMassiv);
-Console.WriteLine($" Сумма нечетных элементов массива = {findSum}");
+Console.WriteLine($" Сумма элементов стоящих на нечётных позициях = {findSum}");
 
 
 
