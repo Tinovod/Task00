@@ -76,4 +76,4 @@ PrintArray(doubleChislo);
 double findDiff = FindDiff(doubleChislo);
 double maximum = Maximum(doubleChislo);
 double minimum = Minimum(doubleChislo);
-Console.WriteLine($"Разница между {maximum:F1} и {minimum:F1} = {findDiff:F1}");
+Console.WriteLine($" => {maximum:F1} - {minimum:F1} = {findDiff:F1}");
